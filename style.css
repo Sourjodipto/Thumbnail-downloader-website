@@ -1,0 +1,289 @@
+/* Import Google font - Poppins & Noto */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  height: 100%;
+  overflow: hidden;
+}
+.form-space{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 87vh;
+  background-image: url("2.png");
+  background-size: cover;
+  width: 100%;;
+}
+::selection{
+  color: #fff;
+  background: #03310fe3;
+}
+form{
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 30px ;
+  border-radius: 25px;
+  box-shadow: 0px 25px 45px rgba(0,0,0,0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+form h1{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: white;
+  letter-spacing: 1px;
+}
+form .url-input{
+  margin: 30px 0;
+}
+.url-input .title{
+  font-size: 15px;
+  color: white;
+}
+.url-input .field{
+  margin-top: 5px;
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+.url-input .field input{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  font-family: 'Noto Sans', sans-serif;
+  border-radius: 25px;
+  margin-top: 5px;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0px 25px 45px rgba(0,0,0,0.1);
+}
+.url-input .field input::placeholder{
+  color: #b3b3b3;
+}
+.url-input .field .bottom-line{
+  position: absolute;
+  left: 0;
+  bottom: 1opx;
+  height: 3px;
+  width: 100%;
+  background: rgb(27, 54, 30);
+  transform: scale(0);
+  transition: transform 0.3s ease;
+  margin-top: 5px;
+  
+}
+.url-input .field input:focus ~ .bottom-line,
+.url-input .field input:valid ~ .bottom-line{
+  transform: scale(1);
+}
+form .preview-area{
+  border-radius: 5px;
+  height: 220px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px dashed rgba(255,255,255,0.5);
+}
+.preview-area.active{
+  border: none;
+}
+.preview-area .thumbnail{
+  width: 100%;
+  display: none;
+  border-radius: 5px;
+}
+.preview-area.active .thumbnail{
+  display: block;
+}
+.preview-area.active .icon,
+.preview-area.active span{
+  display: none;
+}
+.preview-area span{
+  color: white;
+  margin-top: 25px;
+
+}
+form .download-btn{
+  color: #fff;
+  height: 53px;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 540;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin: 30px 0 20px 0;
+  border-radius: 25px;
+  background: #03310f8e;
+  pointer-events: none;
+  transition: background 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0px 25px 45px rgba(0,0,0,0.1);
+
+}
+.download-btn:hover{
+  background: #03310fe3;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.836)
+}
+.main-nav {
+  height: 90px;
+}
+.logo {
+  color: white;
+  line-height: 90px;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 30px;
+  font-family: "AstroSpace", sans-serif;
+}
+.navlinks {
+  list-style: none;
+  float: right;
+  line-height: 90px;
+  margin: 0;
+  padding: 0;
+}
+.navlinks li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+.navlinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s linear 0s;
+  text-transform: uppercase;
+}
+.navlinks li a:hover {
+  color: #0ba5348e;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #08a13150;
+}
+li a.contact {
+  background: #0779258e;
+  padding: 9px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  border-bottom: none;
+}
+li a.contact:hover {
+  background-color: #03310fe3;
+  color: white;
+  border-bottom: none;
+}
+#check {
+  display: none;
+}
+.menu-btn {
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 90px;
+  margin-right: 40px;
+  display: none;
+  cursor: pointer;
+}
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.836)
+}
+
+p.copyright {
+  width: 100%;
+  color: #fff;
+  line-height: 32px;
+  font-size: 15px;
+  text-align: center;
+  bottom:0;
+}
+@media (max-width: 900px) {
+  .navlinks {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: all 0.5s;
+    right: -100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+  }
+  .navlinks li {
+    display: block;
+  }
+  .navlinks li a {
+    font-size: 20px;
+  }
+  .navlinks li a:hover {
+    border-bottom: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  #check:checked ~ .navlinks {
+    right: 0;
+  }
+  .logo{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 460px){
+  .form-space{
+    padding: 0 20px;
+  }
+  form header{
+    font-size: 24px;
+  }
+  .url-input .field,
+  form .download-btn{
+    height: 45px;
+  }
+  form .download-btn{
+    font-size: 15px;
+  }
+  form .preview-area{
+    height: 130px;
+  }
+  .preview-area span{
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 360px) {
+  .logo {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  .menu-btn {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+  .menu-btn:focus {
+    color: blue;
+  }
+}
+
+
